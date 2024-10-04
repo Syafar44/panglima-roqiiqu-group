@@ -13,8 +13,8 @@ const Header = () => {
             xmlns="http://www.w3.org/2000/svg"
             fillRule="evenodd"
             strokeLinejoin="round"
-            stroke-miterlimit="2"
-            clip-rule="evenodd"
+            strokeMiterlimit="2"
+            clipRule="evenodd"
             viewBox="0 0 64 64"
             id="maps"
           >

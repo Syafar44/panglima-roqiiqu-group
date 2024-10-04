@@ -1,6 +1,7 @@
 import Header from "./components/header/header";
 import NavbarPrg from "./components/header/navbar";
 import Hero from "./components/main/hero";
+import Profile from "./components/main/profile";
 
 const Beranda = () => {
   return (
@@ -11,6 +12,7 @@ const Beranda = () => {
       </header>
       <main>
         <Hero />
+        <Profile />
       </main>
     </>
   );

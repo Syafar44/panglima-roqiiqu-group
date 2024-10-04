@@ -11,7 +11,7 @@ const NavbarPrg = () => {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
-          <div className="md:flex gap-7 md:text-2xl lg:text-sm text-white items-center py-2">
+          <div className="md:flex gap-7 text-lg lg:text-sm text-white items-center py-2">
             <Navbar.Link
               href="#"
               active

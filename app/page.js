@@ -1,10 +1,15 @@
+import Header from "./components/header/header";
+import Navbar from "./components/header/navbar";
 
-const Home = () => {
+const Beranda = () => {
   return (
     <>
-      
+      <header>
+        <Header />
+        <Navbar />
+      </header>
     </>
   );
-}
+};
 
-export default Home;
+export default Beranda;

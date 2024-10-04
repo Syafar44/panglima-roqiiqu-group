@@ -2,17 +2,17 @@ const Header = () => {
   return (
     <div className="bg-primary flex justify-between items-center px-5">
       <img
-        className="w-36 -translate-x-5"
+        className="w-20 md:w-36 -translate-x-5"
         src="logo/prg.png"
         alt="logo Panglima Roqiiqu Group"
       />
-      <div className="flex gap-10 text-sm">
+      <div className="flex gap-2 md:gap-10 text-[0.5rem] md:text-sm">
         <div className="flex items-center">
           <svg
-            className="w-9"
+            className="w-5 md:w-9"
             xmlns="http://www.w3.org/2000/svg"
-            fill-rule="evenodd"
-            stroke-linejoin="round"
+            fillRule="evenodd"
+            strokeLinejoin="round"
             stroke-miterlimit="2"
             clip-rule="evenodd"
             viewBox="0 0 64 64"
@@ -29,7 +29,7 @@ const Header = () => {
         </div>
         <div className="flex items-center">
           <svg
-            className="w-9 rotate-12"
+            className="w-5 md:w-9 rotate-12"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"
             id="phone"

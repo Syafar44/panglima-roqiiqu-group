@@ -1,12 +1,12 @@
 import Header from "./components/header/header";
-import Navbar from "./components/header/navbar";
+import NavbarPrg from "./components/header/navbar";
 
 const Beranda = () => {
   return (
     <>
       <header>
         <Header />
-        <Navbar />
+        <NavbarPrg />
       </header>
     </>
   );

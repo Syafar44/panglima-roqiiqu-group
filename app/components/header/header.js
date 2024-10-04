@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="bg-primary flex justify-between items-center px-5">
+    <div className="bg-primary flex justify-between items-center px-5 md:px-10">
       <img
         className="w-20 md:w-36 -translate-x-5"
         src="logo/prg.png"

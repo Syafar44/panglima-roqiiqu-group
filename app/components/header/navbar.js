@@ -5,30 +5,39 @@ import { Navbar } from "flowbite-react";
 
 const NavbarPrg = () => {
   return (
-    <Navbar fluid rounded className="bg-black">
-      <div className="w-full flex justify-end">
-        <Navbar.Toggle />
-      </div>
-      <Navbar.Collapse>
-        <div className="md:flex gap-10 md:text-2xl lg:text-base text-white items-center py-2">
-          <Navbar.Link href="#" active className="text-secondary hover:bg-gray-600">
-            Beranda
-          </Navbar.Link>
-          <Navbar.Link href="#" className="text-secondary hover:bg-gray-600">
-            About
-          </Navbar.Link>
-          <Navbar.Link href="#" className="text-secondary hover:bg-gray-600">
-            Services
-          </Navbar.Link>
-          <Navbar.Link href="#" className="text-secondary hover:bg-gray-600">
-            Pricing
-          </Navbar.Link>
-          <Navbar.Link href="#" className="text-secondary hover:bg-gray-600">
-            Contact
-          </Navbar.Link>
+    <div className="md:px-7 bg-black sticky">
+      <Navbar fluid rounded className="bg-black">
+        <div className="w-full flex justify-end">
+          <Navbar.Toggle />
         </div>
-      </Navbar.Collapse>
-    </Navbar>
+        <Navbar.Collapse>
+          <div className="md:flex gap-7 md:text-2xl lg:text-sm text-white items-center py-2">
+            <Navbar.Link
+              href="#"
+              active
+              className="text-secondary hover:bg-gray-600"
+            >
+              Beranda
+            </Navbar.Link>
+            <Navbar.Link href="#" className="text-secondary hover:bg-gray-600">
+              Profile Kami
+            </Navbar.Link>
+            <Navbar.Link href="#" className="text-secondary hover:bg-gray-600">
+              Bisnis Kami
+            </Navbar.Link>
+            <Navbar.Link href="#" className="text-secondary hover:bg-gray-600">
+              Karier
+            </Navbar.Link>
+            <Navbar.Link href="#" className="text-secondary hover:bg-gray-600">
+              Ruang Berita
+            </Navbar.Link>
+            <Navbar.Link href="#" className="text-secondary hover:bg-gray-600">
+              Kontak Kami
+            </Navbar.Link>
+          </div>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
   );
 };
 

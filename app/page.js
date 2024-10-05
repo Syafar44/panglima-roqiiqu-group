@@ -6,18 +6,22 @@ import NavbarPrg from "./components/header/navbar";
 import Hero from "./components/main/hero";
 import OurLogo from "./components/main/ourLogo";
 import Profile from "./components/main/profile";
+import Achievement from "./components/main/achievement";
+import Visi from "./components/main/visimisi";
 
 const Beranda = () => {
   return (
     <>
       <header>
-        <Header />  
+        <Header />
         <NavbarPrg />
       </header>
       <main>
         <Hero />
         <Profile />
         <OurLogo />
+        <Achievement />
+        <Visi />
       </main>
     </>
   );

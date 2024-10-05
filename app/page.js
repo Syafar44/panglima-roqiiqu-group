@@ -12,6 +12,8 @@ import Bisnis from "./components/main/bisnis";
 import Berita from "./components/main/berita";
 
 // Footer
+import Karier from "./components/footer/karier";
+import Kontak from "./components/footer/kontak";
 
 const Beranda = () => {
   return (
@@ -29,7 +31,10 @@ const Beranda = () => {
         <Bisnis />
         <Berita />
       </main>
-      <footer></footer>
+      <footer className="grid md:grid-cols-2 p-5 md:p-10 bg-black">
+        <Karier />
+        <Kontak />
+      </footer>
     </>
   );
 };

@@ -7,8 +7,11 @@ import Hero from "./components/main/hero";
 import OurLogo from "./components/main/ourLogo";
 import Profile from "./components/main/profile";
 import Achievement from "./components/main/achievement";
-import Visi from "./components/main/visimisi";
+import VisiMisi from "./components/main/visimisi";
 import Bisnis from "./components/main/bisnis";
+import Berita from "./components/main/berita";
+
+// Footer
 
 const Beranda = () => {
   return (
@@ -22,9 +25,11 @@ const Beranda = () => {
         <Profile />
         <OurLogo />
         <Achievement />
-        <Visi />
+        <VisiMisi />
         <Bisnis />
+        <Berita />
       </main>
+      <footer></footer>
     </>
   );
 };

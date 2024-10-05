@@ -23,6 +23,7 @@ const Beranda = () => {
         <OurLogo />
         <Achievement />
         <Visi />
+        <Bisnis />
       </main>
     </>
   );

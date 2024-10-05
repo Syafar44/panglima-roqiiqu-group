@@ -1,16 +1,16 @@
 const Visi = () => {
   return (
     <>
-      <div className="flex items-center justify-between p-10">
+      <div className="md:flex items-center justify-between p-5 md:p-10">
         <div
-          className="bg-cover h-60 w-80 flex justify-center items-center font-bold"
+          className="bg-cover h-[15rem] mb-5 md:mb-0 md:h-60 w-full md:w-80 flex justify-center items-center font-bold"
           style={{
             backgroundImage: "url(hero/gerai.jpg)",
           }}
         >
           <h1 className="text-white text-2xl">Visi & Misi</h1>
         </div>
-        <div className="w-[60%] text-sm">
+        <div className="md:w-[60%] text-sm">
           <h3 className="text-base font-bold">Visi:</h3>
           <p>
             Menginspirasi Indonesia! Menjadi Perusahaan Syariah Kelas Dunia Yang
@@ -34,8 +34,8 @@ const Visi = () => {
           </ul>
         </div>
       </div>
-      <div className="flex items-center justify-between p-10">
-        <div className="w-[55%] text-sm">
+      <div className="flex flex-wrap-reverse md:flex md:flex-nowrap items-center justify-between p-5 md:p-10">
+        <div className="mt-5 md:mt-0 md:w-[55%] text-sm">
           <div className="mb-5">
             <h3 className="text-base font-bold">Syar&apos;i </h3>
             <p>
@@ -74,7 +74,7 @@ const Visi = () => {
           </div>
         </div>
         <div
-          className="bg-cover h-[25rem] w-96 flex justify-center items-center font-bold"
+          className="bg-cover h-[15rem] md:h-[25rem] w-full md:w-96 flex justify-center items-center font-bold"
           style={{
             backgroundImage: "url(hero/resto.jpg)",
           }}

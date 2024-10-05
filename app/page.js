@@ -8,6 +8,7 @@ import OurLogo from "./components/main/ourLogo";
 import Profile from "./components/main/profile";
 import Achievement from "./components/main/achievement";
 import Visi from "./components/main/visimisi";
+import Bisnis from "./components/main/bisnis";
 
 const Beranda = () => {
   return (

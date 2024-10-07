@@ -14,6 +14,7 @@ import Berita from "./components/main/berita";
 // Footer
 import Karier from "./components/footer/karier";
 import Kontak from "./components/footer/kontak";
+import Footer from "./components/footer/footer";
 
 const Beranda = () => {
   return (
@@ -31,9 +32,10 @@ const Beranda = () => {
         <Bisnis />
         <Berita />
       </main>
-      <footer className="grid md:grid-cols-2 md:h-full p-5 md:p-10 bg-black overflow-hidden">
+      <footer className="grid grid-cols-1 md:grid-cols-2 md:h-full py-5 md:px-10 bg-black overflow-hidden">
         <Karier />
         <Kontak />
+        <Footer />
       </footer>
     </>
   );

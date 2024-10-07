@@ -19,9 +19,11 @@ import Footer from "./components/footer/footer";
 const Beranda = () => {
   return (
     <>
-      <header>
-        <Header />
-        <NavbarPrg />
+      <header className="h-[6rem] md:h-[7rem]">
+        <div className="fixed top-0 w-full z-50">
+          <Header />
+          <NavbarPrg />
+        </div>
       </header>
       <main>
         <Hero />
@@ -32,7 +34,7 @@ const Beranda = () => {
         <Bisnis />
         <Berita />
       </main>
-      <footer className="grid grid-cols-1 md:grid-cols-2 md:h-full py-5 md:px-10 bg-black overflow-hidden">
+      <footer className="grid grid-cols-1 md:grid-cols-2 md:h-full py-5 md:px-10 bg-black">
         <Karier />
         <Kontak />
         <Footer />

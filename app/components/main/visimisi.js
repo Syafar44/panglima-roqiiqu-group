@@ -1,6 +1,6 @@
-const Visi = () => {
+const VisiMisi = () => {
   return (
-    <>
+    <div id="visimisi">
       <div className="md:flex items-center justify-between p-5 md:p-10">
         <div
           className="bg-cover h-[15rem] mb-5 md:mb-0 md:h-60 w-full md:w-80 flex justify-center items-center font-bold"
@@ -82,8 +82,8 @@ const Visi = () => {
           <h1 className="text-white text-2xl">Nilai-nilai</h1>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Visi;
+export default VisiMisi;

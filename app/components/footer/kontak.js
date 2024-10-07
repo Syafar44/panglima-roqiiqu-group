@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Kontact = () => {
   const form = useRef();
@@ -13,72 +14,81 @@ const Kontact = () => {
     const userEmail = form.current.user_email.value;
     const message = form.current.message.value;
 
-    const openModal = () => {
-      document.getElementById("my_modal").showModal();
-    };
-
     if (userName && userEmail && message) {
       emailjs
         .sendForm(
-          "service_idf5xe9",
+          "service_7utmsan",
           "template_c3iif86",
           form.current,
-          "s-gUBrpAU8bY-veel"
+          "stydoEssWgAhkYgBu"
         )
         .then(
-          (result) => {
-            openModal();
+          () => {
+            Swal.fire({
+              title: "Pesan Terkirim",
+              text: "Terima kasih atas pesan anda",
+              icon: "success",
+            });
             form.current.reset();
           },
           (error) => {
-            console.error("Email sending failed:", error.text);
+            Swal.fire({
+              title: error,
+              text: error.text,
+              icon: "error",
+            });
           }
         );
     } else {
-      alert("harap isi semua data terlebih dahulu");
+      Swal.fire({
+        title: "Data Belum Lengkap",
+        text: "Tolong isi semua data yang ada",
+        icon: "warning",
+      });
     }
   };
 
   return (
     <>
-      <div className="px-5 mt-5 md:mt-0 md:px-0 flex flex-col justify-between ">
+      <div
+        id="kontak"
+        className="px-5 mt-5 md:mt-0 md:px-0 flex flex-col justify-between "
+      >
         <h1 className="text-primary text-center font-bold text-3xl">
           Kontak Kami
         </h1>
-        <form ref={form} onSubmit={sendEmail} className="mt-6">
-          <div className="flex-1">
-            <label className="block mb-2 text-sm text-primary">
+        <form ref={form} onSubmit={sendEmail} method="post" className="mt-6">
+          <div className="flex-1 border-b">
+            <label className="block mb-2 text-sm text-accent">
               Nama Lengkap
             </label>
             <input
               type="text"
               id="user_name"
               name="user_name"
-              className="block w-full px-5 py-3 mt-2 text-accent placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-5 py-3 mt-2 text-accent bg-black border-none focus:border-accent focus:ring-accent focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
 
-          <div className="flex-1 mt-6">
-            <label className="block mb-2 text-sm text-primary dark:text-gray-200">
+          <div className="flex-1 mt-6 border-b">
+            <label className="block mb-2 text-sm text-accent">
               Alamat Email
             </label>
             <input
               type="email"
               id="user_email"
               name="user_email"
-              className="block w-full px-5 py-3 mt-2 text-accent placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-5 py-3 mt-2 text-accent bg-black border-none focus:border-accent focus:ring-accent focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
 
-          <div className="w-full mt-6">
-            <label className="block mb-2 text-sm text-primary dark:text-gray-200">
-              Pesan
-            </label>
+          <div className="w-full mt-6 border-b border-l-">
+            <label className="block mb-2 text-sm text-accent">Pesan</label>
             <textarea
               type="text"
               id="message"
               name="message"
-              className="block w-full h-32 px-5 py-3 mt-2 text-accent placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full h-32 px-5 py-3 mt-2 text-accent bg-black border-none md:h-48 focus:border-accent focus:ring-accent focus:outline-none focus:ring focus:ring-opacity-40"
             ></textarea>
           </div>
 
@@ -89,30 +99,6 @@ const Kontact = () => {
           />
         </form>
       </div>
-      <dialog id="my_modal" className="modal">
-        <div className="modal-box">
-          <h3 className="font-bold text-xl text-kuning bg-hitam rounded-xl text-center py-2">
-            Hay Sobat Jajan
-          </h3>
-          <div className="py-4 font-semibold text-xl">
-            <h1 className="text-green-700 text-2xl">
-              Pesanan anda sudah kami terima!
-            </h1>
-            <p className="text-lg">
-              Terimakasih atas kritik dan masukannya akan kami kirim balasan
-              secepatnya
-            </p>
-            <h3 className="mt-5">Terimakasih.</h3>
-          </div>
-          <div className="modal-action">
-            <form method="dialog">
-              <button className="btn bg-black text-kuning rounded-xl">
-                Tutup
-              </button>
-            </form>
-          </div>
-        </div>
-      </dialog>
     </>
   );
 };

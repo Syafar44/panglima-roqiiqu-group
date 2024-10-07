@@ -17,7 +17,7 @@ const Footer = () => {
       <div>
         <h2 className="text-lg mb-3 text-primary font-bold">Info Kontak</h2>
         <ul>
-          <li className="flex gap-4 fill-white mb-3">
+          <li className="flex gap-4 fill-white mb-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -28,7 +28,7 @@ const Footer = () => {
             </svg>
             <p>08 222 000 2237</p>
           </li>
-          <li className="flex gap-4 fill-white mb-3">
+          <li className="flex gap-4 fill-white mb-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -39,7 +39,7 @@ const Footer = () => {
             </svg>
             <p>panglima@panglima.com</p>
           </li>
-          <li className="flex gap-4 fill-white mb-3">
+          <li className="flex gap-4 fill-white mb-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"

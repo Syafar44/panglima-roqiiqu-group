@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 const Bisnis = () => {
   return (
-    <div className="bg-primary p-5 md:p-10">
-      <h1 className="text-2xl font-bold text-center">Bisnis Kami</h1>
+    <div id="bisnis" className="bg-primary p-5 md:p-10">
+      <h1 className="text-xl md:text-2xl font-bold text-center">Bisnis Kami</h1>
       <div className="flex flex-col md:flex-row justify-between pt-5 mx-auto">
         <div
           className="bg-cover h-[15rem] md:h-[20rem] md:w-[60%]"
@@ -17,7 +19,9 @@ const Bisnis = () => {
             <li>Bandara balikpapan</li>
           </ul>
           <button className="px-full py-2 text-white bg-red-700">
-            <a href="#">Gerai Panglima</a>
+            <a href="https://geraipanglima.com" target="_blank">
+              Gerai Panglima
+            </a>
           </button>
         </div>
       </div>
@@ -29,7 +33,9 @@ const Bisnis = () => {
           />
           <p className="text-center font-bold">9 Cabang di kota Samarinda</p>
           <button className="px-full py-2 text-black bg-black text-white">
-            <a href="#">Jajan Panglima</a>
+            <a href="https://www.jajanpanglima.com" target="_blank">
+              Jajan Panglima
+            </a>
           </button>
         </div>
         <div

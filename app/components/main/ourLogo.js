@@ -1,10 +1,10 @@
 const OurLogo = () => {
   return (
-    <div className="p-10 text-xl font-bold">
-      <h1>PENJELASAN LOGO</h1>
-      <h1>PANGLIMA ROQIIQU GROUP</h1>
+    <div className="p-5 md:p-10 font-bold">
+      <h1 className="md:text-xl">PENJELASAN LOGO</h1>
+      <h1 className="md:text-xl">PANGLIMA ROQIIQU GROUP</h1>
       <div className="md:flex justify-between mt-5">
-        <img className="mx-auto md:mx-0 w-[30%] mb-5" src="logo/prg.png" />
+        <img className="mx-auto md:mx-0 w-[40%] mb-5" src="logo/prg.png" />
         <div className="text-sm md:w-[60%] grid">
           <p>Nama Panglima RoQiiqu Group berasal dari 3 kata :</p>
           <ul className="list-disc pl-5">

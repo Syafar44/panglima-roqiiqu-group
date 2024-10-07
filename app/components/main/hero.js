@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row px-5 pt-5 md:px-0 md:pt-0 md:justify-between md:items-center md:h-72 overflow-hidden md:pl-10 bg-primary">
+    <div id="beranda" className="flex flex-col md:flex-row px-5 pt-5 md:px-0 md:pt-0 md:justify-between md:items-center md:h-72 overflow-hidden md:pl-10 bg-primary">
       <div>
         <h2 className="text-xl md:text-3xl font-bold">Website Resmi</h2>
         <h1 className="text-2xl md:text-4xl font-bold mb-5">Panglima Roqqiu Group</h1>

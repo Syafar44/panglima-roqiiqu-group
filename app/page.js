@@ -31,7 +31,7 @@ const Beranda = () => {
         <Bisnis />
         <Berita />
       </main>
-      <footer className="grid md:grid-cols-2 p-5 md:p-10 bg-black">
+      <footer className="grid md:grid-cols-2 md:h-full p-5 md:p-10 bg-black overflow-hidden">
         <Karier />
         <Kontak />
       </footer>

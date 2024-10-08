@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="text-white md:col-span-2 md:flex justify-between content-center w-full mt-10 px-5 md:px-10">
+    <div className="text-white md:col-span-2 md:flex justify-between content-center w-full mt-10 px-5">
       <div>
         <img className="w-[10rem] mb-1" src="logo/prg.png" />
         <p>Welcome to the leading company</p>

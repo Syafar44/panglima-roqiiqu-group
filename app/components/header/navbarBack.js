@@ -2,7 +2,7 @@ import { Button } from "flowbite-react";
 
 const NavbarBack = () => {
   return (
-    <nav className="h-14 bg-black px-10 flex items-center">
+    <nav className="h-14 bg-black px-5 md:px-10 flex items-center">
       <button>
         <a href="/" className="flex text-white">
           <svg

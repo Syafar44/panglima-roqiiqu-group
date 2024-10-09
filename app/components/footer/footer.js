@@ -3,15 +3,25 @@ const Footer = () => {
     <div className="text-white md:col-span-2 md:flex justify-between content-center w-full mt-10 px-5">
       <div>
         <img className="w-[10rem] mb-1" src="logo/prg.png" />
-        <p>Welcome to the leading company</p>
+        <p className="text-sm lg:text-base">
+          ©2024 Panglima Roqiiqu Group. All Rights Reserved.
+        </p>
       </div>
       <nav>
         <h2 className="text-lg mb-3 text-primary font-bold">Navigation</h2>
         <ul className="pl-5 list-disc">
-          <li>Beranda</li>
-          <li>Profile Kami</li>
-          <li>Bisnis Kami</li>
-          <li>Ruang Berita</li>
+          <li>
+            <a href="/">Beranda</a>
+          </li>
+          <li>
+            <a href="#profile">Profile Kami</a>
+          </li>
+          <li>
+            <a href="#bisnis">Bisnis Kami</a>
+          </li>
+          <li>
+            <a href="/Berita">Ruang Berita</a>
+          </li>
         </ul>
       </nav>
       <div>

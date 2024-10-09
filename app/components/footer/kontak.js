@@ -54,8 +54,8 @@ const Kontact = () => {
         id="kontak"
         className="px-5 mt-5 md:mt-0 md:px-0 flex flex-col justify-between "
       >
-        <h1 className="text-primary text-center font-bold text-3xl">
-          Kontak Kami
+        <h1 className="text-primary text-center font-bold text-xl md:text-3xl">
+          ---- Kontak Kami ----
         </h1>
         <form ref={form} onSubmit={sendEmail} method="post" className="mt-6">
           <div className="flex-1 border-b">
@@ -93,7 +93,7 @@ const Kontact = () => {
           </div>
 
           <input
-            value="Send"
+            value="Kirim"
             type="submit"
             className="btn w-full text-center px-[.6rem] py-3 mt-6 text-sm font-bold bg-primary hover:text-white tracking-wide  capitalize transition-colors duration-300 transform hover:bg-hitam focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-opacity-50"
           />

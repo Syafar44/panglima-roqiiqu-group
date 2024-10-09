@@ -3,9 +3,9 @@ const OurLogo = () => {
     <div className="p-5 md:p-10 font-bold">
       <h1 className="md:text-xl">PENJELASAN LOGO</h1>
       <h1 className="md:text-xl">PANGLIMA ROQIIQU GROUP</h1>
-      <div className="md:flex justify-between mt-5">
+      <div className="md:flex md:justify-between mt-5">
         <img className="mx-auto md:mx-0 w-[40%] mb-5" src="logo/prg.png" />
-        <div className="text-sm md:w-[60%] grid">
+        <div className="text-sm md:w-[50%] grid">
           <p>Nama Panglima RoQiiqu Group berasal dari 3 kata :</p>
           <ul className="list-disc pl-5">
             <li>Panglima =&gt; Pemimpin pasukan yang gagah perkasa</li>

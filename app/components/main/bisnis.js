@@ -1,9 +1,7 @@
-import Link from "next/link";
-
 const Bisnis = () => {
   return (
     <div id="bisnis" className="bg-primary p-5 md:p-10">
-      <h1 className="text-xl md:text-2xl font-bold text-center">Bisnis Kami</h1>
+      <h1 className="text-xl md:text-2xl font-bold text-center">---- Bisnis Kami ----</h1>
       <div className="flex flex-col md:flex-row justify-between pt-5 mx-auto">
         <div
           className="bg-cover h-[15rem] md:h-[20rem] md:w-[60%]"

@@ -65,13 +65,13 @@ const Berita = () => {
 
   return (
     <>
-      <header className="h-[6rem] md:h-[7rem]">
-        <div className="fixed top-0 w-full z-50">
+      <header className="h-[6rem] md:h-[7rem] 2xl:w-[1200px] 2xl:m-auto">
+        <div className="fixed top-0 w-full z-50 2xl:w-[1200px] 2xl:m-auto">
           <Header />
           <NavbarBack />
         </div>
       </header>
-      <main className="px-5 md:px-10 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <main className="px-5 md:px-10 2xl:px-0 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 2xl:w-[1200px] 2xl:m-auto">
         {berita.map((item) => {
           return (
             <div key={item.id} className="bg-accent mb-5 md:mb-0">
@@ -147,7 +147,7 @@ const Berita = () => {
         </Modal>
       )}
 
-      <footer className="bg-black py-5 px-5">
+      <footer className="bg-black py-5 px-5 2xl:w-[1200px] 2xl:m-auto">
         <Footer />
       </footer>
     </>

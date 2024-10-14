@@ -33,13 +33,13 @@ const loker = [
 const Karier = () => {
   return (
     <>
-      <header className="h-[6rem] md:h-[7rem]">
-        <div className="fixed top-0 w-full z-50">
+      <header className="h-[6rem] md:h-[7rem] 2xl:w-[1200px] 2xl:m-auto">
+        <div className="fixed top-0 w-full z-50 2xl:w-[1200px] 2xl:m-auto">
           <Header />
           <NavbarBack />
         </div>
       </header>
-      <main className="grid grid-cols-3 py-10 px-5 gap-5">
+      <main className="grid grid-cols-3 py-10 px-5 2xl:px-0 gap-5 2xl:w-[1200px] 2xl:m-auto">
         {loker.map((info) => {
           return (
             <div key={info.id} className="text-sm border border-black p-3">
@@ -82,7 +82,7 @@ const Karier = () => {
           );
         })}
       </main>
-      <footer className="bg-black py-5 px-5">
+      <footer className="bg-black py-5 px-5 2xl:w-[1200px] 2xl:m-auto">
         <Footer />
       </footer>
     </>

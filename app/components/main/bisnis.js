@@ -1,7 +1,9 @@
 const Bisnis = () => {
   return (
     <div id="bisnis" className="bg-primary p-5 md:p-10">
-      <h1 className="text-xl md:text-2xl font-bold text-center">---- Bisnis Kami ----</h1>
+      <h1 className="text-xl md:text-2xl font-bold text-center">
+        ---- Bisnis Kami ----
+      </h1>
       <div className="flex flex-col md:flex-row justify-between pt-5 mx-auto">
         <div
           className="bg-cover h-[15rem] md:h-[20rem] md:w-[60%]"
@@ -16,11 +18,13 @@ const Bisnis = () => {
             <li>Bandara samarinda</li>
             <li>Bandara balikpapan</li>
           </ul>
-          <button className="px-full py-2 text-white bg-red-700">
-            <a href="https://geraipanglima.com" target="_blank">
-              Gerai Panglima
-            </a>
-          </button>
+          <a
+            className="text-center py-2 text-white bg-red-700 "
+            href="https://geraipanglima.com"
+            target="_blank"
+          >
+            Gerai Panglima
+          </a>
         </div>
       </div>
       <div className="flex flex-col-reverse md:flex-row justify-between pt-5 mx-auto">
@@ -30,11 +34,13 @@ const Bisnis = () => {
             src="logo/jajan.png"
           />
           <p className="text-center font-bold">9 Cabang di kota Samarinda</p>
-          <button className="px-full py-2 text-black bg-black text-white">
-            <a href="https://www.jajanpanglima.com" target="_blank">
-              Jajan Panglima
-            </a>
-          </button>
+          <a
+            className="text-center py-2 text-black bg-black text-white"
+            href="https://www.jajanpanglima.com"
+            target="_blank"
+          >
+            Jajan Panglima
+          </a>
         </div>
         <div
           className="bg-cover h-[15rem] md:h-[20rem] md:w-[60%]"

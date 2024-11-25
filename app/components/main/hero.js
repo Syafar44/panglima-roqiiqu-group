@@ -12,7 +12,6 @@ const Hero = () => {
           bagi semua.
         </p>
       </div>
-      <img className="h-60 md:h-96" src="hero/panglima.jpg" />
     </div>
   );
 };

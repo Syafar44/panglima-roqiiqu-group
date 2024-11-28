@@ -1,27 +1,32 @@
-import Footer from "../components/footer/footer";
-import Header from "../components/header/header";
-import NavbarBack from "../components/header/navbarBack";
+import Footer from '../components/footer/footer';
+import Header from '../components/header/header';
+import NavbarBack from '../components/header/navbarBack';
 
 const loker = [
   {
     id: 1,
-    pekerjaan: "Assistant Baker",
-    waktu: "25/11/2024",
+    pekerjaan: 'Assistant Baker',
+    waktu: '25/11/2024',
   },
   {
     id: 2,
-    pekerjaan: "Driver",
-    waktu: "25/11/2024",
+    pekerjaan: 'Driver',
+    waktu: '25/11/2024',
   },
   {
     id: 3,
-    pekerjaan: "Supervisor Maintenance",
-    waktu: "25/11/2024",
+    pekerjaan: 'Supervisor Maintenance',
+    waktu: '25/11/2024',
   },
   {
     id: 4,
-    pekerjaan: "Supervisor R&D Bakery Pastry",
-    waktu: "25/11/2024",
+    pekerjaan: 'Supervisor R&D Bakery Pastry',
+    waktu: '25/11/2024',
+  },
+  {
+    id: 5,
+    pekerjaan: 'Chef De Partie',
+    waktu: '28/11/2024',
   },
 ];
 

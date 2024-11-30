@@ -21,44 +21,14 @@ const loker = [
     ],
   },
   {
-    id: 1092823,
-    jobs: 'STAFF PRODUKSI AMPLANG',
-    date: '28/11/2024',
-    condition: [
-      'Laki-laki maksimal 30 tahun',
-      'Taat Beribadah Wajib & sunnah serta bersedia diatur sesuai Syariat Islam',
-      'Pendidikan Minimal SMA/Sederajat (tidak sedang berkuliah)',
-      'Fresh Graduate Silahkan Melamar',
-      'Memiliki Smartphone',
-      'Memiliki kemampuan interpersonal dan komunikasi yang baik',
-      'Jujur, pekerja keras & terpercaya',
-      'Bersedia bekerja shift',
-      'Penempatan Samarinda',
-      'Dapat bergabung segera',
-    ],
-  },
-  {
     id: 1092874,
     jobs: 'CHEF DE PARTIE',
     date: '24/11/2024',
     condition: [
-      'Laki-Laki Maksimal 30 Tahun ',
+      'Laki-Laki Maksimal 35 Tahun ',
       'Taat Beribadah Wajib & sunnah serta bersedia diatur sesuai Syariat Islam',
       'Pendidikan Minimal SMA/Sederajat ',
       'Memiliki pengalaman kerja dibidangnya',
-      'Dapat bergabung segera',
-    ],
-  },
-  {
-    id: 1092875,
-    jobs: 'DRIVER',
-    date: '24/11/2024',
-    condition: [
-      'Laki-Laki Maksimal 30 Tahun ',
-      'Taat Beribadah Wajib & sunnah serta bersedia diatur sesuai Syariat Islam',
-      'Pendidikan Minimal SMA/Sederajat ',
-      'Memiliki pengalaman kerja dibidangnya',
-      'Memiliki SIM A',
       'Dapat bergabung segera',
     ],
   },
@@ -88,6 +58,52 @@ const loker = [
       'Dapat bergabung segera',
     ],
   },
+  {
+    id: 1092823,
+    jobs: 'STAFF PRODUKSI AMPLANG',
+    date: '28/11/2024',
+    condition: [
+      'Laki-laki maksimal 30 tahun',
+      'Taat Beribadah Wajib & sunnah serta bersedia diatur sesuai Syariat Islam',
+      'Pendidikan Minimal SMA/Sederajat (tidak sedang berkuliah)',
+      'Fresh Graduate Silahkan Melamar',
+      'Memiliki Smartphone',
+      'Memiliki kemampuan interpersonal dan komunikasi yang baik',
+      'Jujur, pekerja keras & terpercaya',
+      'Bersedia bekerja shift',
+      'Penempatan Samarinda',
+      'Dapat bergabung segera',
+    ],
+  },
+  {
+    id: 1092823,
+    jobs: 'STAFF MAINTENANCE',
+    date: '30/11/2024',
+    condition: [
+      'Laki-laki maksimal 30 tahun',
+      'Taat Beribadah Wajib & sunnah serta bersedia diatur sesuai Syariat Islam',
+      'Pendidikan Minimal SMA/Sederajat, Pendidikan SMK Kelistrikan diutamakan (tidak sedang berkuliah)',
+      'Fresh Graduate Silahkan Melamar',
+      'Memiliki Smartphone',
+      'Memiliki kemampuan interpersonal dan komunikasi yang baik',
+      'Jujur, pekerja keras & terpercaya',
+      'Penempatan Samarinda',
+      'Dapat bergabung segera',
+    ],
+  },
+  {
+    id: 1092875,
+    jobs: 'STAFF PPIC',
+    date: '30/11/2024',
+    condition: [
+      'Laki-Laki Maksimal 35 Tahun ',
+      'Taat Beribadah Wajib & sunnah serta bersedia diatur sesuai Syariat Islam',
+      'Pendidikan Minimal SMA/Sederajat ',
+      'Memiliki pengalaman kerja dibidangnya',
+      'Paham tentang konsep perencanaan dan pengendalian produksi, manajemen persediaan, dan prinsip-prinsip Lean Manufacturing ',
+      'Dapat bergabung segera',
+    ],
+  },
 ];
 
 const Karier = () => {
@@ -101,7 +117,10 @@ const Karier = () => {
       </header>
       <main className="grid md:grid-cols-2 lg:grid-cols-3 py-10 px-5 2xl:px-0 gap-5 2xl:w-[1200px] 2xl:m-auto">
         {loker.map((info) => (
-          <div key={info.id} className="text-sm border border-black p-3 flex flex-col justify-between">
+          <div
+            key={info.id}
+            className="text-sm border border-black p-3 flex flex-col justify-between"
+          >
             <div className="flex justify-between">
               <h1>
                 Posisi: <span className="font-bold">{info.jobs}</span>

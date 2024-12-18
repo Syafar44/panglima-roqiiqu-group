@@ -1,7 +1,8 @@
-import "./globals.css";
+import './globals.css';
+import Script from 'next/script';
 
 export const metadata = {
-  title: "Panglima Roqiiqu Group",
+  title: 'Panglima Roqiiqu Group',
   description: "Panglima's",
 };
 
@@ -16,7 +17,21 @@ export default function RootLayout({ children }) {
           sizes="16x16"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PNBW4SEQJF"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PNBW4SEQJF');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }

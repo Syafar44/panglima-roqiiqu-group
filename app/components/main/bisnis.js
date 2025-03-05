@@ -31,15 +31,15 @@ const Bisnis = () => {
         <div className="p-10 flex flex-col gap-5 md:w-[40%]">
           <img
             className="w-[10rem] mx-auto md:w-[60%] md:ml-[20%]"
-            src="logo/jajan.png"
+            src="logo/logoroti-01.svg"
           />
           <p className="text-center font-bold">9 Cabang di kota Samarinda</p>
           <a
-            className="text-center py-2 text-black bg-black text-white"
+            className="text-center py-2 bg-black text-white"
             href="https://www.jajanpanglima.com"
             target="_blank"
           >
-            Jajan Panglima
+            Roti Gembung Panglima
           </a>
         </div>
         <div

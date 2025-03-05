@@ -32,7 +32,6 @@ const Beranda = () => {
         <Achievement />
         <VisiMisi />
         <Bisnis />
-        <Berita />
       </main>
       <footer className="grid grid-cols-1 md:grid-cols-2 md:h-full py-5 md:px-10 bg-black 2xl:w-[1200px] 2xl:m-auto">
         <Karier />

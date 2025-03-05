@@ -34,12 +34,12 @@ const NavbarPrg = () => {
             >
               Karier
             </Navbar.Link>
-            <Navbar.Link
+            {/* <Navbar.Link
               href="/Berita"
               className="text-secondary hover:text-black hover:bg-primary active:bg-primary"
             >
               Ruang Berita
-            </Navbar.Link>
+            </Navbar.Link> */}
             <Navbar.Link
               href="#kontak"
               className="text-secondary hover:text-black hover:bg-primary active:bg-primary"
